@@ -1,1 +1,42 @@
-asd
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опросник</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Пройди наш опрос!</h1>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введи свое имя" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Возраст:</label>
+                <input type="number" id="age" name="age" placeholder="Укажи возраст" required>
+            </div>
+
+            <div class="form-group">
+                <label>Какие соцсети ты используешь чаще всего?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="social" value="Instagram"> Instagram</label>
+                    <label><input type="checkbox" name="social" value="TikTok"> TikTok</label>
+                    <label><input type="checkbox" name="social" value="VK"> VK</label>
+                    <label><input type="checkbox" name="social" value="Telegram"> Telegram</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="feedback">Что бы ты хотел улучшить в интернете?</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Твои идеи..."></textarea>
+            </div>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</body>
+</html>
